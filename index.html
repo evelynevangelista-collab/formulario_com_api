@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cadastro dos Melhores Filmes</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Filmes</h1>
+            <p>Preencha informações: </p>
+        </header>
+        <main>
+            <section>
+                <h2>Novo Filme</h2>
+
+                <form id="form-lugar">
+                    <label for="title">Nome do Filme:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="genero">Gênero</label>
+                    <input id="genero" name="genero" type="text" required />
+
+                    <label for="ano">Ano de Lançamento:</label>
+                    <input id="ano" name="ano" type="text" required />
+
+                    <label for="diretor">Diretor: </label>
+                    <input id="diretor" name="diretor" type="text" required />
+
+                    <label for="nota">Nota: </label>
+                    <input id="nota" name="nota" type="text" required />
+
+
+                    <label for="imageUrl">URL da imagem (Capa):  </label>
+                    <input id="imagUrl" name="imageUrl" type="url"  />
+
+                    <button type="submit">Cadastrar Filme</button>
+                </form>
+
+                <p id="resposta"></p>
+            </section>
+        </main>
+    </body>
+</html>
