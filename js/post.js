@@ -23,7 +23,7 @@ form.addEventListener("submit", async function (event) {
 
   //organizar esse objeto e  montar
 
-  const heroi = {
+  const filme = {
       title: dados.get("title"),
       genero: dados.get("genero"),
       ano: dados.get("ano"),
@@ -42,7 +42,7 @@ form.addEventListener("submit", async function (event) {
 try {
 
   const respostaApi = await fetch(apiUrl, {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
       "x-api-key": apiKey,

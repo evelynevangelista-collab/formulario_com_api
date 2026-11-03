@@ -15,7 +15,7 @@
             <section>
                 <h2>Novo Filme</h2>
 
-                <form id="form-lugar">
+                <form id="form-filme">
                     <label for="title">Nome do Filme:</label>
                     <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
 
@@ -23,17 +23,17 @@
                     <input id="genero" name="genero" type="text" required />
 
                     <label for="ano">Ano de Lançamento:</label>
-                    <input id="ano" name="ano" type="text" required />
+                    <input id="ano" name="ano" type="number" required />
 
                     <label for="diretor">Diretor: </label>
                     <input id="diretor" name="diretor" type="text" required />
 
                     <label for="nota">Nota: </label>
-                    <input id="nota" name="nota" type="text" required />
+                    <input id="nota" name="nota" type="number" min="0" max="10" step="0.5" required />
 
 
                     <label for="imageUrl">URL da imagem (Capa):  </label>
-                    <input id="imagUrl" name="imageUrl" type="url"  />
+                    <input id="imageUrl" name="imageUrl" type="url"  />
 
                     <button type="submit">Cadastrar Filme</button>
                 </form>
